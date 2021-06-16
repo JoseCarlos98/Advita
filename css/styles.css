@@ -18,6 +18,38 @@ h1,h2,h3,h4,a,p{
     padding: 0;
     font-weight: 400;
 }
+
+.zoom{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 3.7%;
+    cursor: pointer;
+    top: -2%;
+}
+.zoom i:hover{
+    color: var(--lilaa);
+}
+
+.zoom i{
+    color: var(--rosa);
+    width: 40px;
+    margin-right: 10px;
+    height: 40px;
+    background: white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zooom{
+    zoom: 110%;
+}
 .cont-whats{
     display: flex;
     bottom: 1%;
@@ -149,7 +181,7 @@ h1,h2,h3,h4,a,p{
     left: 0;
     right: 0;
     top: 0;
-    height: 100px;
+    height: 120px;
     transition: 3s all ease;
     box-shadow: 0px 5px 15px #00000030;
 }
@@ -176,6 +208,7 @@ h1,h2,h3,h4,a,p{
 }
 
 .posicion{
+    padding-top: 20px;
     justify-content: space-between;
     height: 160px;
     height: auto;
@@ -239,7 +272,7 @@ h1,h2,h3,h4,a,p{
     -o-transition: .3s all ease;
 }
 .navbar-nav{
-    width: 60%;
+    width: 70%;
     justify-content: space-around;
 }
 .estilo-c{
@@ -1181,6 +1214,30 @@ footer .col-md-6 div p{
     font-family: var(--lato);
 }
 
+.fondoo{
+    background-image: url(/img/especialidadedes.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+.fondoo2{
+    background-image: url(/img/especialidadeds2.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+@media screen and (max-width: 568px) {
+
+    .seccion6 .col-md-3  img{
+        width: 100%;
+        position: unset;
+        margin-top: unset!important;
+    }
+
+}
 @media screen and (max-width: 800px) {
     
     .logo2{
@@ -1237,6 +1294,7 @@ footer .col-md-6 div p{
 
         .dimen{
             height: 510px;
+            justify-content: center;
         }
 
         .seccion{
@@ -1272,10 +1330,22 @@ footer .col-md-6 div p{
             background-position: bottom;
         }
 
+        .servicio-descripcion .box i{
+            margin-bottom: 10px;
+        }
         .servicio-descripcion .box{
             width: 90%;
             margin: auto;
+            font-size: 12px;
             margin-bottom: 10px;
+        }
+        .img-info{
+            width: 120px;
+            height: 120px;
+        }
+
+        .mas-info p{
+            font-size: 12px;
         }
 
         .btn-um-hc div{
@@ -1384,6 +1454,7 @@ footer .col-md-6 div p{
         .seccion6 .col-md-3  img{
             width: 100%;
             position: unset;
+            margin-top: 70%;
         }
 
         footer .col-md-3{

@@ -3,12 +3,12 @@
 var fondo = document.querySelector(".img-esteto");
 var texto= document.getElementById("bienvenido");
 var whatsapp = document.querySelector(".cont-texto");
+let num = 0;
 
 whatsapp.addEventListener('click', ()=>{
     whatsapp.style.display = 'none'
 })
 
-let num = 0;
 function cambiarFondo(lado) {
     if (lado == 'izq') {
         num --;
@@ -34,15 +34,15 @@ function cambiarFondo(lado) {
 }
     
 
-    // MENU FIJO
+// MENU FIJO
 let nav = document.getElementById('navvv');
 let logo = document.querySelector('.logo');
 
 
 window.addEventListener('scroll', function(){
     if((window.pageYOffset) > 35){
-        nav.classList.add('nav-fijo')     
-        logo.classList.add('logoM') 
+        nav.classList.add('nav-fijo');  
+        logo.classList.add('logoM');
     }
     else{
         nav.classList.remove('nav-fijo');     
@@ -50,15 +50,29 @@ window.addEventListener('scroll', function(){
     }
 })   
 
-
+// CAMBIAR ICONOS 
 let nums = 0;
 let icono = "";
 document.querySelectorAll('.box').forEach(e =>{
     e.addEventListener('click', (el)=>{
         e.classList.toggle('click-box');
-        icono = e.children[0]
-        el.stopPropagation()
-        icono.classList.toggle(`bi-plus-circle`)
-        icono.classList.toggle('bi-dash-circle')
+        icono = e.children[0];
+        el.stopPropagation();
+        icono.classList.toggle(`bi-plus-circle`);
+        icono.classList.toggle('bi-dash-circle');
     })
+})
+
+// ZOOM 
+var acercar = document.querySelector(".zoomas");
+var alejar = document.querySelector(".zoomenos");
+let body = document.getElementById('body');
+var zom = 100;
+acercar.addEventListener('click', ()=>{
+    zom+=10;
+    body.style.zoom = `${zom}%`;
+})
+alejar.addEventListener('click', ()=>{
+    zom+=-10;
+    body.style.zoom = `${zom}%`;
 })
