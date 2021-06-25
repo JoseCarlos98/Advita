@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 var fondo = document.querySelector(".img-esteto");
 var texto= document.getElementById("bienvenido");
@@ -64,15 +64,38 @@ document.querySelectorAll('.box').forEach(e =>{
 })
 
 // ZOOM 
-var acercar = document.querySelector(".zoomas");
-var alejar = document.querySelector(".zoomenos");
+var acercar = document.querySelector(".fa-plus");
+var alejar = document.querySelector(".fa-minus");
 let body = document.getElementById('body');
+const topInfo = document.querySelector('.mas')
+const topInfo2 = document.querySelector('.menos')
+const flechaa = document.querySelector('.flechha')
+const flechaa2 = document.querySelector('.flechha2')
+
 var zom = 100;
 acercar.addEventListener('click', ()=>{
     zom+=10;
     body.style.zoom = `${zom}%`;
 })
+acercar.addEventListener('mouseover', ()=>{
+    topInfo.classList.add('top-mostrar')
+    flechaa.classList.add('top-mostrar')
+})
+acercar.addEventListener('mouseout', ()=>{
+    flechaa.classList.remove('top-mostrar')
+    topInfo.classList.remove('top-mostrar')
+})
+
 alejar.addEventListener('click', ()=>{
     zom+=-10;
     body.style.zoom = `${zom}%`;
 })
+alejar.addEventListener('mouseover', ()=>{
+    topInfo2.classList.add('top-mostrar')
+    flechaa2.classList.add('top-mostrar')
+})
+alejar.addEventListener('mouseout', ()=>{
+    flechaa2.classList.remove('top-mostrar')
+    topInfo2.classList.remove('top-mostrar')
+})
+

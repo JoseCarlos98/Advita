@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">  
 
 </head>
+
 <body id="body">
   <div class="cont-whats">
     <div class="cont-texto">
@@ -28,13 +29,28 @@
         <p>Hola, ¿En qué podemos servirle?</p>
       </div>
     </div>
+    
     <div class="btn-whatsapp">
       <a href="https://api.whatsapp.com/send?phone=numero-aquí" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-whatsapp " viewBox="0 0 16 16">
         <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
       </svg></a>
     </div>
+    
   </div>
       <div id="navvv"  class="navegacion flex-centrado">
+        <div class="zoom d-flex flex-column " >
+          <i class="fas fa-caret-right flechha"></i>
+          <i class="fas fa-caret-right flechha2"></i>
+         
+          <i class="fas fa-plus zoomas" ></i>
+          <i style="z-index: 1000000000;"  class="fas fa-minus zoomenos"></i>
+          <div class="mas f-c">
+            Presione para ver más cerca.
+          </div>
+          <div class="menos f-c">
+            Presione para ver menos cerca.
+          </div>
+        </div>
         <div class="container ">
           <nav class="navbar config-mobil navbar-expand-lg navbar-light navv">
             <div class="container-fluid" >
@@ -46,17 +62,14 @@
                 <img class="nav-brand logo2" src="img/logoTop.svg" alt="" >
                
               <div class="collapse navbar-collapse posicion position-relative" id="navbarTogglerDemo03">
-                <div class="zoom f-c">
-                  <i class="zoomenos fas fa-search-minus"></i>
-                  <i class="zoomas fas fa-search-plus"></i>
-                </div>
+               
                 <img class="nav-brand logo" src="img/logoTop.svg" alt="">
                 <div class="navbar-nav">
-                  <a class="nav-link" href="#">3 Pasos</a>
-                  <a class="nav-link" href="#">Servicios</a>
-                  <a class="nav-link" href="#">Nostros</a>
-                  <a class="nav-link" href="#">Especialidades</a>
-                  <h1 class="nav-link estilo-c f-c d-flex" href="#">Contacto</h1>
+                  <a class="nav-link w" href="#3pasos">3 Pasos</a>
+                  <a class="nav-link w" href="#servicios">Servicios</a>
+                  <a class="nav-link w" href="#nosotros">Nostros</a>
+                  <a class="nav-link w" href="#especialidades">Especialidades</a>
+                  <a class="nav-link estilo-c f-c d-flex" href="#contacto"><p>Contacto</p></a>
                 <div class="nav-redes d-flex">
                   <div class="facebook f-c">
                     <i class="fab fa-facebook-f"></i>
@@ -67,13 +80,13 @@
                   <div class="insta f-c">
                     <i class="fab fa-instagram"></i>
                   </div>
-                 
                 </div>
               </div>
             </div>
           </nav>
         </div>
       </div>
+    
 
       <section class="seccion">
         <div class="container">
@@ -83,7 +96,7 @@
                   <h2 id="bienvenido">Bienvenido al futuro de servicio y atención médica a domicilio.</h2>
                   <p>Nulla lorem dui, accumsan a purus quis, molestie ultricies risus. Sed a ipsum in risus consequat aliquet.</p>
                   <br>
-                  <div class="btn-presentacion">
+                  <div class="btn-presentacion" id="3pasos">
                     <div class="btnum">
                       <a href="">UNIDAD MÉDICA <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right flechita" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -118,7 +131,7 @@
           </div>
         </div>
       </section>
-
+ 
       <section class="seccion2">
         <div class="container">
           <div class="row dimen2">
@@ -145,11 +158,11 @@
                           <p> Quisque iaculis neque non enim aliquam finibus. In pellentesque nunc nunc, vitae facilisis dolor posuere et. Mauris ornare congue feugiat.</p>
                         </div>
                       </div>
-                      <div class="hver3">
+                      <div class="hver3" >
                         <div>
                           <img src="img/selecciona.svg" alt="">
                           <h2>ATENCIÓN A EMPRESAS Y ASEGURADORAS</h2>
-                          <p>Praesent pharetra, est et dapibus maximus, ipsum tellus condimentum mi, non hendrerit velit urna vel sapien.</p>
+                          <p  id="servicios">Praesent pharetra, est et dapibus maximus, ipsum tellus condimentum mi, non hendrerit velit urna vel sapien.</p>
                         </div>
                       </div>
                     </div>
@@ -164,7 +177,7 @@
             <h3></h3>
             <p>Contamos con una amplia variedad de servicios de salud con atención médica a pacientes que no requieren hospitalización ya sea en la comodidad de su hogar o en nuestros centros clínicos especializados.</p>
           </div>
-          <div class="container">
+          <div class="container" >
             <div class="row d-flex justify-content-between">
               <div class="col-md-5 servicio-descripcion" >
                 <div class="btn-um-hc">
@@ -456,11 +469,11 @@
                     <img class="img-info" src="img/esp1.jpg" alt="">
                   </div>
                 </div>
-                <div class="box">
+                <div class="box" >
                   ÚLCERAS POR PRESIÓN
-                  <i class="bi bi-plus-circle"></i>
+                  <i class="bi bi-plus-circle"   id="nosotros" ></i>
                   <div class="mas-info">
-                    <p >Cras aliquet malesuada leo non feugiat. Sed lacinia semper est, vel eleifend tortor placerat nec. Sed ornare diam sit amet nunc feugiat lobortis.</p>
+                    <p>Cras aliquet malesuada leo non feugiat. Sed lacinia semper est, vel eleifend tortor placerat nec. Sed ornare diam sit amet nunc feugiat lobortis.</p>
                     <img class="img-info" src="img/esp1.jpg" alt="">
                   </div>
                 </div>
@@ -468,118 +481,348 @@
           </div>
       </section>
 
-      <section class="seccion4">
+      <section class="seccion4" >
           <div class="container">
               <div class="row">
                 <div class="col-md-7 fix">
                     <img src="img/sobreNosotros.png" alt="">
                 </div>
-                <div class="col-md-5 d-flex justify-content-center">
-                  <div class="n-mision">
+                <div  class="col-md-5 d-flex justify-content-center">
+                  <div class="n-mision" >
                     <h2>NUESTRA MISSIÓN ES CONTENER <br> COSTOS Y SERVICIOS DE SALUD</h2>
                     <h3 class="linea"></h3>
-                    <p>Para el pagador privado, proporcionando atención médica especializada al paciente en su domicilio o en nuestras unidades de atención médica. <br> <br>
+                    <p  >Para el pagador privado, proporcionando atención médica especializada al paciente en su domicilio o en nuestras unidades de atención médica. <br> <br>
                       Somos la alternativa número uno en México para la atención de pacientes que requieren servicios médicos en su domicilio.</p>
+                      <div id="especialidades"></div>
                     </div>
                   </div>
               </div>
           </div>
       </section>
-      <br><br>
+      <br><br >
 
-      <section class="seccion5">
+      <section class="seccion5"  >
         <div class="container">
           <div class="acomodo">
               <div class=" w-100 info f-c justify-content-start">
-                <div>
+                <div >
                   <h1>Especialidades <br> Médicas</h1>
                   <h2 class="linea"></h2>
                   <p class="texto-descripcion">Etiam ipsum mi, aliquam vitae velit id, malesuada cursus sapien. Ut diam augue, condimentum eu aliquam sed, luctus et sapien.<p>
                 </div>
               </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 p-r">
-              <div class="contraste">
-                <div class="fondoo">
+          <div class="row box-container">
+            <div class="boxE box-img"></div>
+            <div class="boxE purple-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-purple" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
+            </div>
+            <div class="boxE purple-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-purple" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
+            </div>
+            <div class="boxE purple-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-purple" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
+            </div>
+            <div class="boxE purple-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-purple" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
+            </div>
+            <!-- PINK BOX  -->
+             <div class="boxE pink-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-pink" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div>
+             <div class="boxE pink-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-pink" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div>
+             <div class="boxE pink-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-pink" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div>
+             <div class="boxE pink-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-pink" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
                 </div>
-              </div>
+              <h1>Algología</h1>
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
             </div>
-            <div class="col-md-6 p-l">
-              <div class="text-acomodo">
-              <div class="esp-d">
-                <h1> <span style="margin-right: 18px"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Algología</h1>
-                <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
+             <div class="boxE pink-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-pink" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
               </div>
-              <div class="esp-d">
-                <h1> <span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Cardiología</h1>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Endocrinología</h1>
-                <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Gastroenterología</h1>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Geriatría</h1>
-                <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Hematología</h1>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Hepatología</h1>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Cardiología</h1>
-                <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
-              </div>
+              <h1>Algología</h1>
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
             </div>
-          </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 p-r" >
-              <div class="text-acomodo2">
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Infectología</h1>
-                <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
+            <!-- BLUE BOX  -->
+            <div class="boxE blue-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-blue" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
               </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Neumología</h1>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Neurología</h1>
-                <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Oncología</h1>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Pediatría</h1>
-                <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Reumatología</h1>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              </div>
-              <div class="esp-d">
-                <h1><span style="margin-right: 18px;"><img src="img/iconoAdvita.svg" style="width: 20px; height: 20px;" alt=""></span>Urología</h1>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
             </div>
+            <div class="boxE blue-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-blue" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
             </div>
-            <div class="col-md-6 p-l">
-              <div class="contraste">
-                <div class="fondoo2">
+            <div class="boxE blue-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-blue" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
+              </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
+            </div>
+            <div class="boxE blue-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-blue" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
                 </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
+            </div>
+            <div class="boxE blue-box f-c" >
+              <div class="svg-container f-c">
+                  <svg version="1.1" width="48px" height="65px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 48 66" style="enable-background:new 0 0 48 66;" xml:space="preserve">
+                    <g id="Layer_1">
+                      <path class="svg-blue" d="M47.4,37.6l-4.9-7.5c-0.1-0.2-0.2-0.5-0.2-0.8c-1-10.9-9.9-19.1-20.9-19.1c-1,0-2.1,0.1-3,0.3l-4.2-7.9
+                      c-0.7-1.3-2.1-2.1-3.6-2.1c-0.3,0-0.6,0.1-1,0.1L3.6,2C2.3,2.4,1.2,3.3,0.7,4.6C0.2,5.8,0.4,7.2,1.2,8.3l2.7,3.8l-0.8,0.2
+                      c-1.4,0.3-2.5,1.4-2.9,2.7S0.1,18,1.1,19L3,21.1c-1.6,3-2.6,6.4-2.6,10.1c0,6.7,3.1,13.4,8.4,17.9c0.1,0.1,0.3,0.3,0.3,0.7v11.1
+                      c0,1.7,1.3,3.2,3,3.3l16.7,1.4c0.1,0,0.2,0,0.3,0c0.8,0,1.6-0.3,2.3-0.9c0.7-0.6,1-1.5,1-2.4v-7.2h5.2c2.7,0,4.9-2.2,4.9-4.9v-6.9
+                      h1.8c1.4,0,2.7-0.8,3.3-2C48.2,40.2,48.1,38.7,47.4,37.6z M3.9,15.4l5.3-1.2L3.8,6.5C3.5,6,3.7,5.3,4.3,5.1l6-1.4
+                      c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0.1,0.8,0.5l7,12.9c0.3,0.5,0,1.1-0.5,1.2L12,19.6l4.2,8.6c0.3,0.6-0.2,1.2-0.8,1.2
+                      c-0.2,0-0.4-0.1-0.6-0.3L3.5,16.8C3,16.4,3.2,15.5,3.9,15.4z M44.8,39.9c-0.1,0.1-0.2,0.3-0.5,0.3h-2.9c-1.2,0-2.2,1-2.2,2.2v7.8
+                      c0,0.9-0.8,1.6-1.6,1.6h-5.8c-1.4,0-2.5,1.2-2.5,2.5l-0.1,7.9l-16.7-1.6v-11c0-1.2-0.5-2.3-1.4-3.2c-4.5-3.8-7.3-9.7-7.3-15.4
+                      c0-2.7,0.6-5.3,1.7-7.6l7.2,7.7c0.8,0.8,1.8,1.3,2.9,1.3c1.4,0,2.7-0.8,3.4-1.9c0.8-1.2,0.8-2.6,0.2-3.9l-2.4-5l1.8-0.4
+                      c1.2-0.3,2.3-1.1,2.7-2.3c0.5-1.2,0.5-2.5-0.1-3.6L20,13.4c0.5-0.1,1-0.1,1.4-0.1c9.2,0,16.9,7,17.7,16.2c0.1,0.8,0.3,1.5,0.7,2.2
+                      l4.9,7.5C44.9,39.5,44.8,39.8,44.8,39.9z"/>
+                    </g>
+                  </svg>
               </div>
+              <h1>Algología</h1>
+              <p>Maecenas dolor eros, consectetur a urna euismod, accumsan rhoncus enim.</p>
             </div>
           </div>
         </div>
@@ -710,7 +953,7 @@
                     <p>Nosotros</p>
                     <p>Especialidades</p>
                     <p>Términos de uso y Privacidad</p>
-                    <p>Contacto</p>
+                    <p id="contacto">Contacto</p>
                   </div>
                 </div>
             </div>
